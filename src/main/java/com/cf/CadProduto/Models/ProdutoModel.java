@@ -1,9 +1,7 @@
 package com.cf.CadProduto.Models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.cf.CadProduto.Enums.StatusProduto;
+import jakarta.persistence.*;
 
 @Entity
 public class ProdutoModel {
@@ -15,7 +13,18 @@ public class ProdutoModel {
     private Double preco;
     private Integer quantidadeEmEstoque;
 
+    @Enumerated(EnumType.STRING)
+    private StatusProduto statusProduto;
+
     public ProdutoModel() {
+    }
+
+    public StatusProduto getStatusProduto() {
+        return statusProduto;
+    }
+
+    public void setStatusProduto(StatusProduto statusProduto) {
+        this.statusProduto = statusProduto;
     }
 
     public Long getId() {
