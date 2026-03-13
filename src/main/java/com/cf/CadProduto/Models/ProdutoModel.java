@@ -1,4 +1,4 @@
-package com.cf.CadProduto.Model;
+package com.cf.CadProduto.Models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,6 +1,6 @@
 package com.cf.CadProduto.Services;
 
-import com.cf.CadProduto.Model.ProdutoModel;
+import com.cf.CadProduto.Models.ProdutoModel;
 import com.cf.CadProduto.Repositories.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,9 +34,5 @@ public class ProdutoService {
 
         return produtoRepository.save(produto);
     }
-
-
-
-
 
 }

@@ -1,6 +1,6 @@
 package com.cf.CadProduto.Repositories;
 
-import com.cf.CadProduto.Model.ProdutoModel;
+import com.cf.CadProduto.Models.ProdutoModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
